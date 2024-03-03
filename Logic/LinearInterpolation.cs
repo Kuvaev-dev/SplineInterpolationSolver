@@ -29,7 +29,7 @@ namespace SplineInterpolationSolver.Logic
                 interpolatedPoints.Add(x[i + 1]);
                 interpolatedPoints.Add(y[i + 1]);
 
-                TextViewer.ChangeColor($"Крок {i + 1}:\n", "blue");
+                TextViewer.ChangeColor($"\nКрок {i + 1}:\n", "blue");
                 TextViewer.ChangeColor($"\t{i + 1}.1. Розрахунок нахилу: \n\tslope = (y[{i + 1}] - y[{i}]) / (x[{i + 1}] - x[{i}]) = ({y[i + 1]} - {y[i]}) / ({x[i + 1]} - {x[i]}) = {slope:0.##}", "magenta");
                 TextViewer.ChangeColor($"\t{i + 1}.2. Розрахунок перетину з віссю ординат: \n\tintercept = y[{i}] - slope * x[{i}] = {y[i]} - {slope} * {x[i]} = {intercept:0.##}", "magenta");
                 TextViewer.ChangeColor($"\t{i + 1}.3. Рівняння для сегмента {i + 1}: \n\ty = {slope:0.##}x + {intercept:0.##} для x у ({x[i]}; {x[i + 1]})", "magenta");
