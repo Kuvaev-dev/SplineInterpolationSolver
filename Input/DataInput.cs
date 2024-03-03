@@ -33,7 +33,7 @@ namespace SplineInterpolationSolver.Input
         // Введення з файлу
         public static string InputFileName()
         {
-            Console.WriteLine("Введіть щлях до файлу:");
+            Console.WriteLine("Введіть шлях до файлу:");
             return Console.ReadLine();
         }
 
